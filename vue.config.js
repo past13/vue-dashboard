@@ -1,7 +1,18 @@
 const webpack = require("webpack");
 
 module.exports = {
-  transpileDependencies: ['vuex-module-decorators'],
+  transpileDependencies: [
+    'vuex-module-decorators',
+    'quasar'
+  ],
+
+  pluginOptions: {
+    quasar: {
+      importStrategy: 'kebab',
+      rtlSupport: true
+    }
+  },
+
   configureWebpack: {
     devtool: "source-map",
     plugins: [
