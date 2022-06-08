@@ -1,12 +1,11 @@
 <template>
     <div class="main">
-        <div>{{ testZinute }}</div>
+        <div>{{ test }}</div>
     </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class Project extends Vue {
-    testZinute = "Test";
+    test = "Test";
 }
 </script>
